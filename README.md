@@ -2,7 +2,9 @@ yii2-nav-x
 ==========
 
 An extended bootstrap Nav widget for Yii Framework 2 with submenu drilldown. This widget extends the `\yii\bootstrap\Nav` widget
-with some additional controls and adding the CSS Styles for enabling a submenu drilldown.
+with some additional controls and adding the CSS Styles for enabling a submenu drilldown. The dropdown menu style is optimized for both 
+desktop and mobile devices. The drilldown is triggered on `active` instead of `hover` so that it works equally well on mobile devices. The
+extension uses the `\kartik\dropdown\DropdownX` extension by default for rendering dropdown navigation, but this can be overridden.
 
 > NOTE: This extension depends on the [yiisoft/yii2-bootstrap](https://github.com/yiisoft/yii2/tree/master/extensions/bootstrap) extension. Check the 
 [composer.json](https://github.com/kartik-v/yii2-builder/blob/master/composer.json) for this extension's requirements and dependencies. 
