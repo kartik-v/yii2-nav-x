@@ -83,12 +83,13 @@ class NavX extends \yii\bootstrap\Nav
                     $items = $this->isChildActive($items, $active);
                 }
                 $dropdown = $this->dropdownClass;
-                $items = $dropdown::widget([
+                $dropdownOptions = ArrayHelper::merge($this->dropdownOptions, [
                     'items' => $items,
                     'encodeLabels' => $this->encodeLabels,
                     'clientOptions' => false,
                     'view' => $this->getView(),
-                ] + $this->dropdownOptions);
+                ]);
+                $items = $dropdown::widget($dropdownOptions);
             }
         }
 
