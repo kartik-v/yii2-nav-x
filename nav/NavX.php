@@ -44,6 +44,7 @@ class NavX extends \yii\bootstrap\Nav
         if (!class_exists($this->dropdownClass)) {
              throw new InvalidConfigException("The dropdownClass '{$this->dropdownClass}' does not exist or is not accessible.");
         }
+        NavXAsset::register($this->getView());
         parent::init();
     }
     
