@@ -6,8 +6,6 @@ with some additional controls and adding the CSS Styles for enabling a submenu d
 desktop and mobile devices. The drilldown is triggered on `active` instead of `hover` so that it works equally well on mobile devices. The
 extension uses the `\kartik\dropdown\DropdownX` extension by default for rendering dropdown navigation, but this can be overridden.
 
-> NOTE: Check the [composer.json](https://github.com/kartik-v/yii2-dropdown-x/blob/master/composer.json) for this extension's requirements and dependencies. 
-
 
 ### Demo
 You can see detailed [documentation](http://demos.krajee.com/nav-x) on usage of the extension.
@@ -16,7 +14,7 @@ You can see detailed [documentation](http://demos.krajee.com/nav-x) on usage of 
 
 The preferred way to install this extension is through [composer](http://getcomposer.org/download/).
 
-Read this [web tip /wiki](http://webtips.krajee.com/setting-composer-minimum-stability-application/) on setting the `minimum-stability` settings for your application's composer.json.
+> NOTE: Check the [composer.json](https://github.com/kartik-v/yii2-dropdown-x/blob/master/composer.json) for this extension's requirements and dependencies. Read this [web tip /wiki](http://webtips.krajee.com/setting-composer-minimum-stability-application/) on setting the `minimum-stability` settings for your application's composer.json.
 
 Either run
 
