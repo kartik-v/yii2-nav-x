@@ -113,11 +113,9 @@ class NavX extends \yii\bootstrap\Nav
                     $active = true;
                 }
             }
-            if (is_array($items[$i]['items']))
-            {
+            if (is_array($items[$i]['items'])) {
                 $items[$i]['items'] = $this->isChildActive($items[$i]['items'], $active);
-                if ($active)
-                {
+                if ($active) {
                     Html::addCssClass($items[$i]['options'], 'active');
                 }
             }
