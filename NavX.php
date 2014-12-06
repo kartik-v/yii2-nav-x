@@ -100,4 +100,23 @@ class NavX extends \yii\bootstrap\Nav
 
         return Html::tag('li', Html::a($label, $url, $linkOptions) . $items, $options);
     }
+    
+    /**
+     * @inheritdoc
+     */
+    protected function isChildActive($items, &$active)
+    {
+        foreach ($items as $i => $child) {
+            if (ArrayHelper::remove($items[$i], 'active', false) || $this->isItemActive($child)) {
+                Html::addCssClass($items[$i]['options'], 'active');
+                if ($this->activateParents) {
+                    $active = true;
+                }
+            }
+            if (is_array($items[$i]['items'])) {
+                $items[$i]['items'] = $this->isChildActive($items[$i]['items'], $active);
+            }
+        }
+        return $items;
+    }
 }
