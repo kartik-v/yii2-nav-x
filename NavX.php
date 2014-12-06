@@ -3,7 +3,7 @@
 /**
  * @copyright Copyright &copy; Kartik Visweswaran, Krajee.com, 2014
  * @package yii2-nav-x
- * @version 1.1.0
+ * @version 1.2.0
  */
 
 namespace kartik\nav;
@@ -37,7 +37,7 @@ class NavX extends \yii\bootstrap\Nav
     public $dropdownIndicator = ' <span class="caret"></span>';
     
     /**
-     * Initialize the widget
+     * @inheritdoc
      * @throws InvalidConfigException
      */
     public function init() {
@@ -49,10 +49,7 @@ class NavX extends \yii\bootstrap\Nav
     }
     
     /**
-     * Renders a widget's item.
-     * @param string|array $item the item to render.
-     * @return string the rendering result.
-     * @throws InvalidConfigException
+     * @inheritdoc
      */
     public function renderItem($item)
     {
@@ -99,5 +96,29 @@ class NavX extends \yii\bootstrap\Nav
         }
 
         return Html::tag('li', Html::a($label, $url, $linkOptions) . $items, $options);
+    }
+    
+    /**
+     * @inheritdoc
+     */
+    protected function isChildActive($items, &$active)
+    {
+        foreach ($items as $i => $child) {
+            if (ArrayHelper::remove($items[$i], 'active', false) || $this->isItemActive($child)) {
+                Html::addCssClass($items[$i]['options'], 'active');
+                if ($this->activateParents) {
+                    $active = true;
+                }
+            }
+            if (isset($items[$i]['items']) && is_array($items[$i]['items'])) {
+                $childActive = false;
+                $items[$i]['items'] = $this->isChildActive($items[$i]['items'], $childActive);
+                if ($childActive) {
+                    Html::addCssClass($items[$i]['options'], 'active');
+                    $active = true;
+                }
+            }
+        }
+        return $items;
     }
 }
