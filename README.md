@@ -1,6 +1,12 @@
 yii2-nav-x
 ==========
 
+[![Latest Stable Version](https://poser.pugx.org/kartik-v/yii2-nav-x/v/stable.svg)](https://packagist.org/packages/kartik-v/yii2-nav-x)
+[![License](https://poser.pugx.org/kartik-v/yii2-nav-x/license.svg)](https://packagist.org/packages/kartik-v/yii2-nav-x)
+[![Total Downloads](https://poser.pugx.org/kartik-v/yii2-nav-x/downloads.svg)](https://packagist.org/packages/kartik-v/yii2-nav-x)
+[![Monthly Downloads](https://poser.pugx.org/kartik-v/yii2-nav-x/d/monthly.png)](https://packagist.org/packages/kartik-v/yii2-nav-x)
+[![Daily Downloads](https://poser.pugx.org/kartik-v/yii2-nav-x/d/daily.png)](https://packagist.org/packages/kartik-v/yii2-nav-x)
+
 An extended bootstrap Nav widget for Yii Framework 2 with submenu drilldown. This widget extends the `\yii\bootstrap\Nav` widget
 with some additional controls and adding the CSS Styles for enabling a submenu drilldown. The dropdown menu style is optimized for both 
 desktop and mobile devices. The drilldown is triggered on `active` instead of `hover` so that it works equally well on mobile devices. The
