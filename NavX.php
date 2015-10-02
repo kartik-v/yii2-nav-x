@@ -64,6 +64,9 @@ class NavX extends \yii\bootstrap\Nav
         $items = ArrayHelper::getValue($item, 'items');
         $url = ArrayHelper::getValue($item, 'url', '#');
         $linkOptions = ArrayHelper::getValue($item, 'linkOptions', []);
+        if(isset($item['icon'])) {
+            $label=Html::tag('i', '', ['class' => 'glyphicon glyphicon-'.$item['icon']]).$label;
+        }
 
         if (isset($item['active'])) {
             $active = ArrayHelper::remove($item, 'active', false);
