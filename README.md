@@ -1,7 +1,8 @@
 yii2-nav-x
 ==========
 
-[![Latest Stable Version](https://poser.pugx.org/kartik-v/yii2-nav-x/v/stable)](https://packagist.org/packages/kartik-v/yii2-nav-x)
+[![Stable Version](https://poser.pugx.org/kartik-v/yii2-nav-x/v/stable)](https://packagist.org/packages/kartik-v/yii2-nav-x)
+[![Unstable Version](https://poser.pugx.org/kartik-v/yii2-nav-x/v/unstable)](https://packagist.org/packages/kartik-v/yii2-nav-x)
 [![License](https://poser.pugx.org/kartik-v/yii2-nav-x/license)](https://packagist.org/packages/kartik-v/yii2-nav-x)
 [![Total Downloads](https://poser.pugx.org/kartik-v/yii2-nav-x/downloads)](https://packagist.org/packages/kartik-v/yii2-nav-x)
 [![Monthly Downloads](https://poser.pugx.org/kartik-v/yii2-nav-x/d/monthly)](https://packagist.org/packages/kartik-v/yii2-nav-x)
