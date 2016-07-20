@@ -1,0 +1,6 @@
+@media (max-width: 767px) {
+    .navbar-nav .open .open .dropdown-menu > li > a,
+    .navbar-nav .open .open .dropdown-menu .dropdown-header {
+        padding-left: 35px;
+    }
+}
