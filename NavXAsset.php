@@ -8,15 +8,18 @@
 
 namespace kartik\nav;
 
-use Yii;
-use kartik\base\PluginAssetBundle;
-
 /**
  * Asset bundle for NavX widget. 
  *
  * @author Kartik Visweswaran <kartikv2@gmail.com>
  * @since 1.0
  */
-class NavXAsset extends PluginAssetBundle
+class NavXAsset extends \kartik\base\AssetBundle
 {
+    public function init()
+    {
+        $this->setSourcePath(__DIR__ . '/assets');
+        $this->setupAssets('css', ['css/nav-x']);
+        parent::init();
+    }
 }

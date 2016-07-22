@@ -1,0 +1,18 @@
+@media (max-width: 767px) {
+    .navbar-nav .open .open .dropdown-menu > li > a,
+    .navbar-nav .open .open .dropdown-menu .dropdown-header {
+        padding-left: 35px;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > .open > a,
+    .navbar-default .navbar-nav .open .dropdown-menu > .open > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > .open > a:focus {
+        color: #555;
+        background-color: #e7e7e7;
+    }
+    .navbar-inverse .navbar-nav .open .dropdown-menu > .open > a,
+    .navbar-inverse .navbar-nav .open .dropdown-menu > .open > a:hover,
+    .navbar-inverse .navbar-nav .open .dropdown-menu > .open > a:focus {
+        color: #fff;
+        background-color: #080808;
+    }
+}
