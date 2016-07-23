@@ -7,6 +7,7 @@
  */
 
 namespace kartik\nav;
+use kartik\base\AssetBundle;
 
 /**
  * Asset bundle for NavX widget. 
@@ -14,7 +15,7 @@ namespace kartik\nav;
  * @author Kartik Visweswaran <kartikv2@gmail.com>
  * @since 1.0
  */
-class NavXAsset extends \kartik\base\AssetBundle
+class NavXAsset extends AssetBundle
 {
     public function init()
     {

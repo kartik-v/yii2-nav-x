@@ -3,10 +3,11 @@ Change Log: `yii2-nav-x`
 
 ## Version 1.2.1
 
-**Date:** 02-May-2016
+**Date:** 23-Jul-2016
 
 - (enh #12): Refactor NavX code based on latest `yii\bootstrap\Nav`.
 - Add branch alias for dev-master latest release.
+- (enh #14, #15, #16): Better styling for submenu items for smaller device screens.
 
 ## Version 1.2.0
 
