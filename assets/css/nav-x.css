@@ -1,3 +1,14 @@
+/*!
+ * @package   yii2-nav-x
+ * @author    Kartik Visweswaran <kartikv2@gmail.com>
+ * @copyright Copyright &copy; Kartik Visweswaran, Krajee.com, 2014 - 2017
+ * @version   1.2.1
+ *
+ * Nav X styling and enhancements for Bootstrap.
+ * Built for Yii Framework 2.0
+ * Author: Kartik Visweswaran
+ * For more Yii related demos visit http://demos.krajee.com
+ */
 @media (max-width: 767px) {
     .navbar-nav .open .open .dropdown-menu > li > a,
     .navbar-nav .open .open .dropdown-menu .dropdown-header {

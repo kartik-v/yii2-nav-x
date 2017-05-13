@@ -3,11 +3,13 @@ Change Log: `yii2-nav-x`
 
 ## Version 1.2.1
 
-**Date:** 23-Jul-2016
+**Date:** 13-May-2017
 
-- (enh #12): Refactor NavX code based on latest `yii\bootstrap\Nav`.
-- Add branch alias for dev-master latest release.
+- Chronological ordering of issues for change log.
+- Add github contribution and PR templates.
 - (enh #14, #15, #16): Better styling for submenu items for smaller device screens.
+- Add branch alias for dev-master latest release.
+- (enh #12): Refactor NavX code based on latest `yii\bootstrap\Nav`.
 
 ## Version 1.2.0
 
@@ -19,13 +21,13 @@ Change Log: `yii2-nav-x`
 
 **Date:** 08-Nov-2014
 
-- Enhance dependency validation using common code base.
 - Set release to stable
+- Enhance dependency validation using common code base.
 
 ## Version 1.0.0
 
 **Date:** 08-May-2014
 
-- Initial release
-- (bug #6): Enhance the extension to have the right dependency on `yii\bootstrap` assets.
 - PSR4 alias change
+- (bug #6): Enhance the extension to have the right dependency on `yii\bootstrap` assets.
+- Initial release
