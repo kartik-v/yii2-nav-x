@@ -3,12 +3,13 @@
 /**
  * @copyright Copyright &copy; Kartik Visweswaran, Krajee.com, 2014 - 2018
  * @package yii2-nav-x
- * @version 1.2.3
+ * @version 1.2.4
  */
 
 namespace kartik\nav;
 use yii\helpers\ArrayHelper;
 use yii\helpers\Html;
+use yii\base\InvalidConfigException;
 
 /**
  * Trait for [[NavX]] methods
@@ -18,6 +19,11 @@ use yii\helpers\Html;
  */
 trait NavXTrait
 {
+    /**
+     * @var array the dropdown widget options
+     */
+    public $dropdownOptions = [];
+
     /**
      * Renders the given items as a dropdown.
      * This method is called to create sub-menus.
@@ -65,5 +71,16 @@ trait NavXTrait
             }
         }
         return $items;
+    }
+
+    /**
+     * Check dependency
+     * @throws InvalidConfigException
+     */
+    protected function checkDependency()
+    {
+        if (!class_exists($this->dropdownClass)) {
+            throw new InvalidConfigException("The dropdownClass '{$this->dropdownClass}' was not found. Please ensure the '{$this->dropdownClass}' extension is installed and accessible.");
+        }
     }
 }

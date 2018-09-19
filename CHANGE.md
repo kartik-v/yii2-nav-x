@@ -1,6 +1,12 @@
 Change Log: `yii2-nav-x`
 ========================
 
+## Version 1.2.4
+
+**Date:** 19-Sep-2018
+
+- Maintain dependency on kartik-v/yii2-dropdown-x for Backward compatibility.
+
 ## Version 1.2.3
 
 **Date:** 19-Sep-2018

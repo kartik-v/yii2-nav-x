@@ -3,7 +3,7 @@
 /**
  * @copyright Copyright &copy; Kartik Visweswaran, Krajee.com, 2014 - 2018
  * @package yii2-nav-x
- * @version 1.2.3
+ * @version 1.2.4
  */
 
 namespace kartik\nav;
