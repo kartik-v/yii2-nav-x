@@ -1,6 +1,13 @@
 Change Log: `yii2-nav-x`
 ========================
 
+## Version 1.2.2
+
+**Date:** 19-Sep-2018
+
+- Enhancements to support Bootstrap v4.x.
+- Move all source code to `src` directory.
+
 ## Version 1.2.1
 
 **Date:** 13-May-2017

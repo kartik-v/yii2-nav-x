@@ -1,69 +1,50 @@
 <?php
 
 /**
- * @copyright Copyright &copy; Kartik Visweswaran, Krajee.com, 2014 - 2017
+ * @copyright Copyright &copy; Kartik Visweswaran, Krajee.com, 2014 - 2018
  * @package yii2-nav-x
- * @version 1.2.1
+ * @version 1.2.2
  */
 
 namespace kartik\nav;
-
-use yii\base\InvalidConfigException;
-use yii\bootstrap\Nav;
 use yii\helpers\ArrayHelper;
 use yii\helpers\Html;
 
 /**
- * An extended nav menu for Bootstrap 3 - that offers submenu drilldown
+ * Trait for [[NavX]] methods
  *
  * @author Kartik Visweswaran <kartikv2@gmail.com>
  * @since 1.0
  */
-class NavX extends Nav
+trait NavXTrait
 {
     /**
-     * @var string the class name to render the Dropdown items. Defaults to `\kartik\dropdown\DropdownX`.
-     */
-    public $dropdownClass = '\kartik\dropdown\DropdownX';
-
-    /**
-     * @var array the dropdown widget options
-     */
-    public $dropdownOptions = [];
-
-    /**
-     * @inheritdoc
-     * @throws InvalidConfigException
-     */
-    public function init()
-    {
-        if (!class_exists($this->dropdownClass)) {
-            throw new InvalidConfigException("The dropdownClass '{$this->dropdownClass}' does not exist or is not accessible.");
-        }
-        NavXAsset::register($this->getView());
-        parent::init();
-    }
-
-    /**
-     * @inheritdoc
+     * Renders the given items as a dropdown.
+     * This method is called to create sub-menus.
+     * @param array $items the given items. Please refer to [[Dropdown::items]] for the array structure.
+     * @param array $parentItem the parent item information. Please refer to [[items]] for the structure of this array.
+     * @return string the rendering result.
+     * @throws \Exception
      */
     protected function renderDropdown($items, $parentItem)
     {
-        /**
-         * @var \yii\bootstrap\Dropdown $ddWidget
-         */
-        $ddWidget = $this->dropdownClass;
+        /** @var \yii\base\Widget $dropdownClass */
+        $dropdownClass = $this->dropdownClass;
         $ddOptions = array_replace_recursive($this->dropdownOptions, [
+            'options' => ArrayHelper::getValue($parentItem, 'dropDownOptions', []),
             'items' => $items,
             'encodeLabels' => $this->encodeLabels,
             'clientOptions' => false,
             'view' => $this->getView(),
         ]);
-        return $ddWidget::widget($ddOptions);
+        return $dropdownClass::widget($ddOptions);
     }
 
     /**
-     * @inheritdoc
+     * Check to see if a child item is active optionally activating the parent.
+     * @param array $items @see items
+     * @param bool $active should the parent be active too
+     * @return array @see items
      */
     protected function isChildActive($items, &$active)
     {
