@@ -21,6 +21,19 @@ You can see detailed [documentation](http://demos.krajee.com/nav-x) on usage of 
 
 ## Installation
 
+Install the dependencies depending on the Bootstrap version used in your app:
+
+1. For Bootstrap 3.x install `kartik-v/yii2-dropdown-x`
+
+```
+$ php composer.phar require kartik-v/yii2-dropdown-x "@dev"
+```
+
+2. For Bootstrap 4.x install `kartik-v/yii2-bootstrap4-dropdown`
+```
+$ php composer.phar require kartik-v/yii2-bootstrap4-dropdown "@dev"
+```
+
 The preferred way to install this extension is through [composer](http://getcomposer.org/download/).
 
 > NOTE: Check the [composer.json](https://github.com/kartik-v/yii2-nav-x/blob/master/composer.json) for this extension's requirements and dependencies. Read this [web tip /wiki](http://webtips.krajee.com/setting-composer-minimum-stability-application/) on setting the `minimum-stability` settings for your application's composer.json.
@@ -28,13 +41,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-$ php composer.phar require kartik-v/yii2-nav-x "dev-master"
+$ php composer.phar require kartik-v/yii2-nav-x "@dev"
 ```
 
 or add
 
 ```
-"kartik-v/yii2-nav-x": "dev-master"
+"kartik-v/yii2-nav-x": "@dev"
 ```
 
 to the ```require``` section of your `composer.json` file.

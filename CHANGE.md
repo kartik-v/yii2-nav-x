@@ -1,6 +1,12 @@
 Change Log: `yii2-nav-x`
 ========================
 
+## Version 1.2.3
+
+**Date:** 19-Sep-2018
+
+- Correct README for dependencies.
+
 ## Version 1.2.2
 
 **Date:** 19-Sep-2018

@@ -3,7 +3,7 @@
 /**
  * @copyright Copyright &copy; Kartik Visweswaran, Krajee.com, 2014 - 2018
  * @package yii2-nav-x
- * @version 1.2.2
+ * @version 1.2.3
  */
 
 namespace kartik\nav;
@@ -79,17 +79,6 @@ class NavX extends Widget
      * @var array the dropdown widget options
      */
     public $dropdownOptions = [];
-
-    /**
-     * @inheritdoc
-     */    
-    public function init()
-    {
-        if (!class_exists($this->dropdownClass)) {
-            throw new InvalidConfigException("The dropdownClass '{$this->dropdownClass}' was not found. Please ensure the '{$this->dropdownClass}' extension is installed and accessible.");
-        }
-        parent::init();
-    }
 
     /**
      * @inheritdoc
