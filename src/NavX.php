@@ -1,17 +1,18 @@
 <?php
 
 /**
- * @copyright Copyright &copy; Kartik Visweswaran, Krajee.com, 2014 - 2018
+ * @copyright Copyright &copy; Kartik Visweswaran, Krajee.com, 2014 - 2021
  * @package yii2-nav-x
- * @version 1.2.4
+ * @version 1.2.5
  */
 
 namespace kartik\nav;
 
 use kartik\base\Widget;
+use yii\base\InvalidConfigException;
 
 /**
- * An extended nav menu for Bootstrap 3.x and 4.x - that offers submenu drilldown
+ * An extended nav menu for Bootstrap 3.x, 4.x, and 5.x that offers submenu drilldown.
  *
  * @author Kartik Visweswaran <kartikv2@gmail.com>
  * @since 1.0
@@ -100,6 +101,14 @@ class NavX extends Widget
                 $opts[$prop] = $this->$prop;
             }
         }
-        echo $this->isBs4() ? NavXBs4::widget($opts) : NavXBs3::widget($opts);
+        /**
+         * @var Widget $widget
+         */
+        $ver = $this->getBsVer();
+        $widget = '\\'.__NAMESPACE__.'\\NavXBs'.$ver;
+        if (!class_exists($widget)) {
+            throw new InvalidConfigException("The NavX widget has not been implemented for Bootstrap {$ver}.x release.");
+        }
+        echo $widget::widget($opts);
     }
 }

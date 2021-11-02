@@ -4,12 +4,13 @@
     </a>
     <br>
     yii2-nav-x
-    <hr>
-    <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=DTP3NZQ6G2AYU"
-       title="Donate via Paypal" target="_blank">
-        <img src="http://kartik-v.github.io/bootstrap-fileinput-samples/samples/donate.png" alt="Donate"/>
-    </a>
+    <hr><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=DTP3NZQ6G2AYU"
+       title="Donate via Paypal" target="_blank"><img height="60" src="https://kartik-v.github.io/bootstrap-fileinput-samples/samples/donate.png" alt="Donate"/></a>
+    &nbsp; &nbsp; &nbsp;
+    <a href="https://www.buymeacoffee.com/kartikv" title="Buy me a coffee" ><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="60" alt="kartikv" /></a>
 </h1>
+
+<div align="center">
 
 [![Stable Version](https://poser.pugx.org/kartik-v/yii2-nav-x/v/stable)](https://packagist.org/packages/kartik-v/yii2-nav-x)
 [![Unstable Version](https://poser.pugx.org/kartik-v/yii2-nav-x/v/unstable)](https://packagist.org/packages/kartik-v/yii2-nav-x)
@@ -18,13 +19,16 @@
 [![Monthly Downloads](https://poser.pugx.org/kartik-v/yii2-nav-x/d/monthly)](https://packagist.org/packages/kartik-v/yii2-nav-x)
 [![Daily Downloads](https://poser.pugx.org/kartik-v/yii2-nav-x/d/daily)](https://packagist.org/packages/kartik-v/yii2-nav-x)
 
+</div>
+
 An extended bootstrap Nav widget for Yii Framework 2 with submenu drilldown. This widget extends the `\yii\bootstrap\Nav` widget for Bootstrap 3.x and 
-`\yii\bootstrap4\Nav` widget for Bootstrap 4.x with some additional controls and adding the CSS Styles for enabling a submenu drilldown. The dropdown menu style 
+`\yii\bootstrap4\Nav` widget for Bootstrap 4.x `\yii\bootstrap5\Nav` widget for Bootstrap 5.x with some additional controls and adding the CSS Styles for enabling a submenu drilldown. The dropdown menu style 
 is optimized for both desktop and mobile devices. The drilldown is triggered on `active` instead of `hover` so that it works equally well on mobile devices. The
 extension uses the one of the following Dropdown Class extensions by default for rendering dropdown navigation, but this can be overridden:
 
 - `\kartik\dropdown\DropdownX`  for Bootstrap 3.x
 - `\kartik\bs4dropdown\Dropdown`  for Bootstrap 4.x
+- `\kartik\bs5dropdown\Dropdown`  for Bootstrap 5.x
 
 ### Demo
 You can see detailed [documentation](http://demos.krajee.com/nav-x) on usage of the extension.
@@ -42,6 +46,11 @@ $ php composer.phar require kartik-v/yii2-dropdown-x "@dev"
 2. For Bootstrap 4.x install `kartik-v/yii2-bootstrap4-dropdown`
 ```
 $ php composer.phar require kartik-v/yii2-bootstrap4-dropdown "@dev"
+```
+
+3. For Bootstrap 5.x install `kartik-v/yii2-bootstrap5-dropdown`
+```
+$ php composer.phar require kartik-v/yii2-bootstrap5-dropdown "@dev"
 ```
 
 The preferred way to install this extension is through [composer](http://getcomposer.org/download/).
