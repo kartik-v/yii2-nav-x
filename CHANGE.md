@@ -1,6 +1,12 @@
 Change Log: `yii2-nav-x`
 ========================
 
+## Version 1.2.6
+
+*Date:* 24-Jan-2022
+
+- Enhance & standardize php docs for new website https://docs.krajee.com.
+
 ## Version 1.2.5
 
 *Date:* 02-Nov-2021

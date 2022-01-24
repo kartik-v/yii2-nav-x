@@ -1,9 +1,9 @@
 <?php
 
 /**
- * @copyright Copyright &copy; Kartik Visweswaran, Krajee.com, 2014 - 2021
+ * @copyright Copyright &copy; Kartik Visweswaran, Krajee.com, 2014 - 2022
  * @package yii2-nav-x
- * @version 1.2.5
+ * @version 1.2.6
  */
 
 namespace kartik\nav;
@@ -11,7 +11,7 @@ namespace kartik\nav;
 use yii\base\InvalidConfigException;
 
 /**
- * Base Trait for [[NavX]] methods
+ * NavXTrait is the base trait for [[NavX]] methods.
  *
  * @author Kartik Visweswaran <kartikv2@gmail.com>
  * @since 1.0

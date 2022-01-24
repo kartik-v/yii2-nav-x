@@ -1,9 +1,9 @@
 <?php
 
 /**
- * @copyright Copyright &copy; Kartik Visweswaran, Krajee.com, 2014 - 2021
+ * @copyright Copyright &copy; Kartik Visweswaran, Krajee.com, 2014 - 2022
  * @package yii2-nav-x
- * @version 1.2.5
+ * @version 1.2.6
  */
 
 namespace kartik\nav;
@@ -31,7 +31,7 @@ class NavXBs5 extends Nav
 
     /**
      * Renders the given items as a dropdown. This method is called to create sub-menus.
-     * @param  array  $items  the given items. Please refer to [[Dropdown::items]] for the array structure.
+     * @param  array  $items  the given items. Please refer to `items` property in the `Dropdown` widget (as set in [[dropdownClass]]) for the array structure.
      * @param  array  $parentItem  the parent item information. Please refer to [[items]] for the structure of this array.
      * @return string the rendering result.
      * @throws Exception
@@ -53,7 +53,7 @@ class NavXBs5 extends Nav
 
     /**
      * Check to see if a child item is active optionally activating the parent.
-     * @param  array  $items  @see items
+     * @param  array  $items  the items configuration similar to [[items]]
      * @param  bool  $active  should the parent be active too
      * @return array
      * @throws Exception
